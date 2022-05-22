@@ -1,0 +1,139 @@
+/*menu using bootstrap*/ 
+#nav{
+    background-color: #FA9490;
+    position:relative;
+}
+
+#navbarSupportedContent{
+
+    background-color: aliceblue;
+    border-radius: 15px;
+    border: solid red;
+    position: absolute;
+    right: 10px;
+    top:10px;
+   
+}
+
+
+.nav-item{
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-brand{
+
+    color: #01539D;
+    text-shadow: 0px 0px 5px #ffd662;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+/*End of using bootstrap*/
+
+/*menu not using bootstrap*/
+
+.wrapper{
+    
+    display: flex; 
+    align-items:flex-start;
+    justify-content: center;
+    height: 200px;
+    flex-direction: column;
+}
+
+.menu{
+    list-style: none;
+    margin-bottom: 2rem;;
+}
+
+ul.menu{
+    padding-left: 0%;
+    border-radius: 15px;
+
+}
+
+.menu .list{
+    height: 200px;
+    width: 200px;
+    
+    margin: 4px 0;
+    
+}
+
+.list-item .fa {
+    text-align: center;
+    line-height: 40px;
+
+}
+
+.list-item a span {
+
+    width: 0px;
+    position: absolute;
+    left: 20px;
+    padding: 0;
+    overflow: hidden;
+    line-height: 40px;
+    letter-spacing: 0.6;
+    white-space:nowrap;
+    transition: 0.25s;
+}
+
+.list-item a{
+    
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    background-color: #ffd662;
+}
+
+.list-item a:hover span{
+    width: auto;
+    padding: 0 20px;
+    margin-left: 10px;
+    overflow: visible;
+    background-color: #ffd662;
+}
+
+
+
+body{
+
+    background-image: url("cool-background\ \(3\).png");
+}
+
+
+@media(width:992px)
+{
+    #navbarSupportedContent{
+
+        background-color: aliceblue;
+        border-radius: 15px;
+        border: solid red;
+        position: absolute;
+        right: 10px;
+        top:10px;
+       
+    }
+}
+
+@media (max-width:991px)
+{
+    #navbarSupportedContent{
+
+        background-color: aliceblue;
+        border-radius: 15px;
+        border: solid red;
+        position: absolute;
+        right: 0;
+        top:55px;
+        margin-left: 5px;
+    }
+}
+
